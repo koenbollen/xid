@@ -1,8 +1,21 @@
 package main
 
-import "github.com/rs/xid"
+import (
+	"os"
+	"strconv"
+
+	"github.com/rs/xid"
+)
 
 func main() {
-	guid := xid.New()
-	println(guid.String())
+	count := 1
+	if len(os.Args) > 1 {
+		if c, err := strconv.Atoi(os.Args[1]); err == nil {
+			count = c
+		}
+	}
+	for range count {
+		guid := xid.New()
+		println(guid.String())
+	}
 }

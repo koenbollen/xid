@@ -7,5 +7,9 @@ Just a simple commandline utility to generate a new XID using the [rs/xid](https
 ```
 $ go install github.com/koenbollen/xid@latest
 $ xid
-cbhrhmqhtv8p8m3qa340
+cv2rejs6o9gutodhlq6g
+$ xid 3
+cv2rekc6o9gus9c8riu0
+cv2rekc6o9gus9c8riug
+cv2rekc6o9gus9c8riv0
 ```
