@@ -16,6 +16,7 @@ func main() {
 	}
 	for range count {
 		guid := xid.New()
-		println(guid.String())
+		os.Stdout.WriteString(guid.String() + "\n")
 	}
+	os.Stdout.Sync()
 }
